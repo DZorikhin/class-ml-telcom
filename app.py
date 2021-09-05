@@ -142,6 +142,7 @@ def main():
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
+    st.write(f'Github repository with project description, EDA and model training could be accessed here: https://github.com/DZorikhin/class-ml-telcom')
     activities = ['Random Forest', 'Logistic Regression', 'SVM', 'Gradient Boosting', 'AdaBoost', 'XGBoost']
     model_option = st.selectbox('Which model would you like to use?', activities)
     st.subheader(f'Select features and predict with {model_option} model')
@@ -164,7 +165,7 @@ def main():
     paperless_billing = st.radio("Does customer prefer paperless billing?", ("Yes", "No"))
     payment = st.selectbox("What payment method does customer prefer?", ("Electronic check", "Mailed check", "Bank transfer (automatic)", "Credit card (automatic)"))
     monthly_charges = st.slider("What is the amount charged to the customer monthly?", value=60.0, step=0.5, min_value=15.0, max_value=120.0)
-    total_charges = st.slider("What is the total amount charged to the customer?", value=60.0, step=0.5, min_value=15.0, max_value=9000.0)
+    total_charges = st.slider("What is the total amount charged to the customer?", value=4000.0, step=0.5, min_value=15.0, max_value=9000.0)
 
     X = map_inputs(gender, senior_citizen, partner, dependents, tenure, phone_service, multiple_lines, internet_service, 
                     online_security, online_backup, device_protection, tech_support, streaming_tv, streaming_movies, contract, 
