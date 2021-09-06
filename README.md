@@ -21,6 +21,6 @@ Recall has been chosen as a target metric because there is a need to minimize th
 
 Proposed portrait of client for high churn rate: client with month-to-month contract, using fiber optic as internet service, without partner, using electronic check as payment method, recently started using company services.
 
-The most accurate algorithm RandomForestClassifier has recall metric equal to 76%
+It is noticable that the more accurate algorithm is RandomForestClassifier with 76% of recall and 79% of accuracy. Second SVM has 75% of recall and 79% of accuracy. Nevertheless, the metrics showed approximately the same values for all algorithms with applied unbalanced parameters.
 
 ![first](https://github.com/DZorikhin/ml-telecom/blob/master/pearson_correlation_coef.png "first")
